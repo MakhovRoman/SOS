@@ -10,6 +10,12 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: "Bebas neue";
+    src: url(../fonts/BebasNeue\ Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -59,6 +65,8 @@ margin: 0 auto;
 }
 .languageMenu {
     list-style: none;
+    position: relative;
+    top: 45px;
 }
 .textLink {
     text-transform: uppercase;
@@ -67,6 +75,7 @@ margin: 0 auto;
     text-decoration: none;
     color: inherit;
     letter-spacing: 0.1em;
+    width: 100%;
 }
 .header__wrapper__language {
     display: flex;
@@ -74,6 +83,26 @@ margin: 0 auto;
 }
 .arrow {
     height: fit-content;
+    font-size: 14px;
+    font-weight: bold;
+}
+.languageMenu__item {
+    padding: 7px 20px 3px 5px;
+}
+.languageMenu__item_hide {
+    transform: scaleY(0);
+    background: rgba(0, 0, 0, 0.75);
+}
+.languageMenu__item:hover, .navMenu__item:hover {
+    color: #FFB548;
+    transition: 0.5s;
+}
+.languageMenu__item, .navMenu__item {
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.languageMenu:hover .languageMenu__item {
+    transform: scaleY(1);
 }
 .right__line {
     transform: rotate(90deg);
@@ -86,6 +115,9 @@ margin: 0 auto;
 }
 .links__item+.links__item {
     margin-left: 17px;
+}
+.links__item a:hover img {
+    filter: sepia(100%);
 }
 
 
@@ -106,4 +138,50 @@ margin: 0 auto;
     left: 0;
     right: 0;
     background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%);
+}
+.initial__wrapper__content {
+    margin: 313px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.heading {
+    font-size: 80px;
+    font-family: "Bebas neue";
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.headingMiddle {
+    font-size: 24px;
+    font-family: "Bebas neue";
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 7px;
+}
+.initial__wrapper__content__buy {
+    display: flex;
+    padding: 17px 20px 17px 17px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    margin-top: 28px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1917;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+.initial__wrapper__content__buy hr {
+    margin: 0 14px 0 11px;
+    border: 0.8px solid #1A1917;
+    opacity: 0.5;
+}
+.initial__wrapper__content__buy:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transition: 0.7s;
+    color: rgb(255, 255, 255);
+}
+.initial__wrapper__content__buy:hover hr {
+    border-color: rgb(255, 255, 255);
+    transition: 0.7s;
 }

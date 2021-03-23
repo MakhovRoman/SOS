@@ -25,18 +25,18 @@
                 </nav>
                 <div class="header__wrapper right">
                     <div class="header__wrapper__language">
-                        <ul class="languageMenu">
-                            <li class="languageMenu__item"><a class="textLink" href="#">eng</a></li>
-                            <li class="languageMenu__item"><a class="textLink" href="#">rus</a></li>
-                            <li class="languageMenu__item"><a class="textLink" href="#">fra</a></li>
-                            <li class="languageMenu__item"><a class="textLink" href="#">deu</a></li>
+                        <ul class="languageMenu" id="languageMenu">
+                            <li class="languageMenu__item languageMenu__item_visible"><a class="textLink languageMenu__textLink" href="#">eng</a></li>
+                            <li class="languageMenu__item languageMenu__item_hide"><a class="textLink languageMenu__textLink" href="#">rus</a></li>
+                            <li class="languageMenu__item languageMenu__item_hide"><a class="textLink languageMenu__textLink" href="#">fra</a></li>
+                            <li class="languageMenu__item languageMenu__item_hide"><a class="textLink languageMenu__textLink" href="#">deu</a></li>
                         </ul>
-                        <span class="arrow">&#8964</span>
+                        <span class="arrow">&#709</span>
                     </div>
                     <hr class="right__line">
                     <div class="links">
-                        <div class="links__item"><img src="images/xbox_icon.png" alt=""></div>
-                        <div class="links__item"><img src="images/steam_icon.png" alt=""></div>
+                        <div class="links__item"><a href="#"><img src="images/xbox_icon.png" alt=""></a></div>
+                        <div class="links__item"><a href="#"><img src="images/steam_icon.png" alt=""></a></div>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,11 @@
         <main>
             <section class="initial">
                 <div class="initial__wrapper">
-
+                    <div class="initial__wrapper__content">
+                        <h1 class="heading">survive at all costs</h1>
+                        <h3 class="headingMiddle">experience new social batlle royale game</h3>
+                        <a href="#" class="initial__wrapper__content__buy">buy now on steam <hr> $14.99</a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -52,5 +56,6 @@
 
         </footer>
     </div>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
